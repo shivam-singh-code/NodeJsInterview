@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Candidate</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding:5px;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Candiate Information</h1>
+    <div>
+        <table style="width:100%">
+            <tr>
+              <th>Name</th>
+              <th>Email Address</th>
+              <th>ID</th>
+            </tr>
+            <tr>
+              <td><%=candidate.username%></td>
+              <td><%=candidate.emailaddress %></td>
+              <td><%=candidate.id %></td>
+            </tr>
+          </table>
+          <br>
+          <table style="width: 100%"> 
+             <tr>
+                <th>FirstRoundScore</th>
+                <th>SecondRoundScore</th>
+                <th>ThirdRoundScore</th>
+             </tr>
+             <tr>
+                 <td><%=candidate.firstRoundScore %></td>
+                 <td><%=candidate.SecondRoundScore %></td>
+                 <td><%=candidate.thirdRoundScore %></td>
+             </tr>
+          </table>
+    </div>
+    <a href="/candidates">Go back to Candiate list</a>
+</body>
+</html>
