@@ -10,3 +10,6 @@ Node JS request information
 6.1 Detials Go to :-http://localhost:3000/candidates/:id 
 7.2.Gotbacktocandidate :- http://localhost:3000/candidates 
 8.3.AddCandidate:- http://localhost:3000/candidates/new
+
+Package Requirement
+Express and ejs
